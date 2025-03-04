@@ -1,6 +1,9 @@
 name: build
 run-name: Build libcurl.js
-on: [push]
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  push:
 
 jobs:
   build:
